@@ -1,0 +1,6 @@
+# create .gitignore in root
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
