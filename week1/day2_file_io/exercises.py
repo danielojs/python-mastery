@@ -1,5 +1,7 @@
 import json
 import csv
+from pathlib import Path
+from datetime import datetime
 
 # ──────────────────────────────────────────────────
 # Exercise 1: Save dict to a JSON and load it back
@@ -67,3 +69,26 @@ with open("top-monthly-sales.csv", "w", newline="") as f:
     ])
     writer.writeheader()
     writer.writerows(top_sales)
+
+
+# Exercise 3: Build a simple log writer
+
+"""
+Build path object → logs/app.log
+Ensure parent folder exists
+Generate timestamp
+Format line properly
+Open file in append mode
+Write line + newline
+"""
+
+
+def log(message: str):
+    log_file = Path("logs/app.log")
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+
+    timestamps = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with log_file.open("a", encoding="utf-8") as f:
+        f.write(f"{timestamps} - {message}\n")
+
+log("first log message")

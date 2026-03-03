@@ -8,6 +8,6 @@ Following a structured 6-week beginner → intermediate roadmap.
 | Week | Topic | Status |
 |------|-------|--------|
 | Week 1 / Day 1 | Comprehensions | ✅ |
-| Week 1 / Day 2 | File I/O & JSON | 🔄 |
-| Week 1 / Day 3 | Exceptions | ⬜ In progress |
+| Week 1 / Day 2 | File I/O & JSON | ✅ |
+| Week 1 / Day 3 | Exceptions | 🔄 In progress |
 | Week 1 / Day 4 | Functions at depth | ⬜ |
