@@ -43,7 +43,7 @@ class ExportError(CSVToolError):
         super().__init__(msg)
 
 class LogWriteError(CSVToolError):
-    """Raised when writing the JOSN run log fails."""
+    """Raised when writing the JSON run log fails."""
     def __init__(self, path: str, reason: str = "") -> None:
         msg = f"Failed to write log to '{path}'"
         if reason:
