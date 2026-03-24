@@ -1,0 +1,35 @@
+[
+  {
+    "input_file": "customers-100.csv",
+    "filter": null,
+    "sort": "Country",
+    "descending": false,
+    "export": ".",
+    "rows_loaded": 100,
+    "status": "error",
+    "error": "Failed to export to '.': [Errno 21] Is a directory: '.'",
+    "timestamp": "2026-03-24T22:56:34.231350"
+  },
+  {
+    "input_file": "customers-100.csv",
+    "filter": null,
+    "sort": "Country",
+    "descending": false,
+    "export": "./",
+    "rows_loaded": 100,
+    "status": "error",
+    "error": "Failed to export to './': [Errno 21] Is a directory: './'",
+    "timestamp": "2026-03-24T22:58:22.810339"
+  },
+  {
+    "input_file": "customers-100.csv",
+    "filter": null,
+    "sort": "Country",
+    "descending": false,
+    "export": "day7_capstone",
+    "rows_loaded": 100,
+    "rows_exported": 100,
+    "status": "success",
+    "timestamp": "2026-03-24T22:58:34.201559"
+  }
+]
