@@ -38,7 +38,7 @@ def test_load_valid_csv(valid_csv):
 def test_load_returns_correct_values(valid_csv):
     df = load_csv(valid_csv)
     assert df.iloc[0]["name"] == "Alice"
-    assert df.ilo[1]["age"] == 25
+    assert df.iloc[1]["age"] == 25
 
 def test_file_not_found_raises():
     with pytest.raises(FileNotFoundError) as exc_info:
